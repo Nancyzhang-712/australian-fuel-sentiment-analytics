@@ -56,23 +56,18 @@ My documented responsibilities in the team project were:
 - Contributed to shared **data cleaning and VADER sentiment-analysis** workflows
 - Participated in report writing, documentation and project presentation
 
-Other team members led the Bluesky and Mastodon harvesters, REST API design, Kubernetes cluster administration, notebook dashboard and integration testing. See [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for the complete attribution.
+Other team members led the Bluesky and Mastodon harvesters, REST API design, Kubernetes cluster administration, notebook dashboard and integration testing.
 
 ## Repository contents
 
 ```text
-backend/
-  ingestion/
-    gdelt/              Australian news collection and deduplication
-    nsw_fuel/           Daily official fuel-price ingestion and aggregation
-  processing/
-    news/               Incremental news cleaning and sentiment scoring
-    social_media/       Shared social-media cleaning and enrichment
-database/
-  mappings.json         Elasticsearch mappings
-  setup_elasticsearch.py
-tests/
-  test_api.py           Endpoint integration checks from the team system
+gdelt_ingest.py              Australian news collection and deduplication
+nsw_fuel_price_ingest.py     Daily official fuel-price ingestion and aggregation
+news_clean_main.py           Incremental news cleaning and sentiment scoring
+social_media_clean.py        Shared social-media cleaning and enrichment
+elasticsearch_mappings.json  Elasticsearch index mappings
+setup_elasticsearch.py       Index setup utility
+test_api.py                  Endpoint integration checks from the team system
 ```
 
 This portfolio edition focuses on the data components relevant to my contribution. It intentionally excludes raw datasets, credentials, student IDs, the submitted course report and deployment-specific configuration.
@@ -133,6 +128,5 @@ Required values depend on the component being run. The NSW ingestion pipeline re
 Created by COMP90024 Team 39 at the University of Melbourne: Jinglei Zhang, Yun Gu, Yuanduan Zhu, Kehong Jiao and Xiaonan Wang.
 
 Before reuse or redistribution, please contact the project contributors. No open-source licence is granted by this portfolio repository.
-
 
 > Note: The published portfolio edition places the selected scripts at the repository root with descriptive filenames so each component can be reviewed directly.
