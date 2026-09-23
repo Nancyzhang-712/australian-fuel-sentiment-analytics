@@ -1,0 +1,240 @@
+{
+    "bsky_original_data": {
+        "mappings": {
+            "properties": {
+                "platform": {
+                    "type": "keyword"
+                },
+                "source": {
+                    "type": "keyword"
+                },
+                "post_id": {
+                    "type": "keyword",
+                    "index": false
+                },
+                "created_at": {
+                    "type": "date"
+                },
+                "content": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "author": {
+                    "type": "keyword"
+                },
+                "location": {
+                    "type": "keyword"
+                },
+                "location_raw": {
+                    "type": "text"
+                },
+                "likes": {
+                    "type": "integer"
+                },
+                "reposts": {
+                    "type": "integer"
+                },
+                "replies": {
+                    "type": "integer"
+                },
+                "keywords": {
+                    "type": "keyword"
+                },
+                "language": {
+                    "type": "keyword"
+                },
+                "url": {
+                    "type": "keyword",
+                    "index": false
+                }
+            }
+        }
+    },
+    "mastodon_original_data": {
+        "mappings": {
+            "properties": {
+                "platform": {
+                    "type": "keyword"
+                },
+                "source": {
+                    "type": "keyword"
+                },
+                "post_id": {
+                    "type": "keyword",
+                    "index": false
+                },
+                "created_at": {
+                    "type": "date"
+                },
+                "content": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "author": {
+                    "type": "keyword"
+                },
+                "description": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "location": {
+                    "type": "keyword"
+                },
+                "location_raw": {
+                    "type": "text"
+                },
+                "likes": {
+                    "type": "integer"
+                },
+                "reposts": {
+                    "type": "integer"
+                },
+                "replies": {
+                    "type": "integer"
+                },
+                "keywords": {
+                    "type": "keyword"
+                },
+                "language": {
+                    "type": "keyword"
+                },
+                "url": {
+                    "type": "keyword",
+                    "index": false
+                }
+            }
+        }
+    },
+    "social_media_data": {
+        "mappings": {
+            "properties": {
+                "platform": {
+                    "type": "keyword"
+                },
+                "source": {
+                    "type": "keyword"
+                },
+                "post_id": {
+                    "type": "keyword",
+                    "index": false
+                },
+                "title": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "content": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "author": {
+                    "type": "keyword"
+                },
+                "description": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "location": {
+                    "type": "keyword"
+                },
+                "location_raw": {
+                    "type": "text"
+                },
+                "language": {
+                    "type": "keyword"
+                },
+                "url": {
+                    "type": "keyword",
+                    "index": false
+                },
+                "keyword": {
+                    "type": "keyword"
+                },
+                "search_start_date": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd||strict_date_optional_time||epoch_millis"
+                },
+                "search_end_date": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd||strict_date_optional_time||epoch_millis"
+                },
+                "created_at": {
+                    "type": "date"
+                }
+            }
+        }
+    },
+    "social_media_clean": {
+        "mappings": {
+            "properties": {
+                "mock_id": {
+                    "type": "long",
+                    "index": false
+                },
+                "content": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "location": {
+                    "type": "keyword"
+                },
+                "polarity_scores": {
+                    "type": "float"
+                },
+                "platform": {
+                    "type": "keyword"
+                },
+                "date": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd"
+                }
+            }
+        }
+    },
+    "news_cleaned_data": {
+        "mappings": {
+            "properties": {
+                "news_id": {
+                    "type": "long",
+                    "index": false
+                },
+                "title": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "content": {
+                    "type": "text",
+                    "analyzer": "english"
+                },
+                "location": {
+                    "type": "keyword"
+                },
+                "date": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd"
+                },
+                "polarity_scores": {
+                    "type": "float"
+                }
+            }
+        }
+    },
+    "fuel_price": {
+        "mappings": {
+            "properties": {
+                "Date": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd"
+                },
+                "FuelCode": {
+                    "type": "keyword"
+                },
+                "AvgPrice": {
+                    "type": "float"
+                },
+                "Location": {
+                    "type": "keyword"
+                }
+            }
+        }
+    }
+}
