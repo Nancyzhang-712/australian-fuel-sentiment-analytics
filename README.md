@@ -133,3 +133,6 @@ Required values depend on the component being run. The NSW ingestion pipeline re
 Created by COMP90024 Team 39 at the University of Melbourne: Jinglei Zhang, Yun Gu, Yuanduan Zhu, Kehong Jiao and Xiaonan Wang.
 
 Before reuse or redistribution, please contact the project contributors. No open-source licence is granted by this portfolio repository.
+
+
+> Note: The published portfolio edition places the selected scripts at the repository root with descriptive filenames so each component can be reviewed directly.
